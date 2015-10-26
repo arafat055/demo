@@ -1,6 +1,7 @@
 package com.example.mazhaulislam.demo;
 
 import android.graphics.Typeface;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,7 +15,12 @@ public class secondActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_second);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
         tv2=(TextView)findViewById(R.id.tv2);
         Typeface font = Typeface.createFromAsset(getAssets(), "SolaimanLipi_Bold_10-03-12.ttf");
         tv2.setTypeface(font);
