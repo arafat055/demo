@@ -42,7 +42,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView3"
+        android:id="@+id/img5"
         android:src="@drawable/ager_pata"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
@@ -59,14 +59,14 @@
         android:textColor="#FFFFFF"
         android:textSize="22dp"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/imageView3"
-        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toRightOf="@+id/img5"
+        android:layout_toEndOf="@+id/img5"
         android:layout_marginBottom="9dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/img4"
+        android:id="@+id/img6"
         android:src="@drawable/porer_pata"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -83,8 +83,8 @@
         android:textColor="#FFFFFF"
         android:textSize="22dp"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/img4"
-        android:layout_toStartOf="@+id/img4"
+        android:layout_toLeftOf="@+id/img6"
+        android:layout_toStartOf="@+id/img6"
         android:layout_marginBottom="9dp" />
 
     <HorizontalScrollView
@@ -172,8 +172,8 @@
         android:id="@+id/imageView13"
         android:src="@drawable/hook"
         android:layout_below="@+id/horizontalScrollView"
-        android:layout_alignRight="@+id/img4"
-        android:layout_alignEnd="@+id/img4" />
+        android:layout_alignRight="@+id/img6"
+        android:layout_alignEnd="@+id/img6" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -202,7 +202,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView15"
-        android:layout_above="@+id/imageView3"
+        android:layout_above="@+id/img5"
         android:layout_alignLeft="@+id/textView6"
         android:layout_alignStart="@+id/textView6"
         android:src="@drawable/map_boy" />
@@ -225,8 +225,8 @@
         android:id="@+id/imageView16"
         android:src="@drawable/opener"
         android:layout_alignTop="@+id/imageView14"
-        android:layout_alignLeft="@+id/imageView3"
-        android:layout_alignStart="@+id/imageView3" />
+        android:layout_alignLeft="@+id/img5"
+        android:layout_alignStart="@+id/img5" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -17,15 +17,13 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 
 
-public class fourth extends Activity {
-
-    int flag=0;
+public class fifthActivity extends Activity {
+    ImageView img7;
+    int flag=0,f=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fourth);
-        ImageView img5=(ImageView)findViewById(R.id.img5);
-        ImageView img6=(ImageView)findViewById(R.id.img6);
+        setContentView(R.layout.fifth);
         ImageView study = (ImageView) findViewById(R.id.imageView6);
         final ImageView hook = (ImageView) findViewById(R.id.imageView17);
         final Button b = (Button) findViewById(R.id.button);
@@ -34,36 +32,27 @@ public class fourth extends Activity {
         final ImageView pin3 = (ImageView) findViewById(R.id.imageView20);
         final ImageView pin4 = (ImageView) findViewById(R.id.imageView21);
         final ImageView hook1 = (ImageView) findViewById(R.id.imageView13);
+        final ImageView info = (ImageView) findViewById(R.id.imageView22);
         pin1.setVisibility(View.INVISIBLE);
         pin2.setVisibility(View.INVISIBLE);
         pin3.setVisibility(View.INVISIBLE);
         pin4.setVisibility(View.INVISIBLE);
         hook.setVisibility(View.INVISIBLE);
+        info.setVisibility(View.INVISIBLE);
 
         final RelativeLayout rv = (RelativeLayout) findViewById(R.id.rv);
         rv.setVisibility(View.INVISIBLE);
-
-        img5.setOnClickListener(
+        img7=(ImageView)findViewById(R.id.img7);
+        img7.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
-                        Intent i = new Intent(fourth.this, third.class);
+                        Intent i = new Intent(fifthActivity.this,fourth.class);
                         startActivity(i);
                     }
                 }
         );
-        img6.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                        Intent k = new Intent(fourth.this, fifthActivity.class);
-                        startActivity(k);
-                    }
-                }
-        );
-
         study.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -114,6 +103,19 @@ public class fourth extends Activity {
                 }
             }
         });
+        pin1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(f==0) {
+                    info.setVisibility(View.VISIBLE);
+                    f=1;
+                }
+                else{
+                    info.setVisibility(View.INVISIBLE);
+                    f=0;
+                }
+            }
+        });
 
     }
 
@@ -140,4 +142,3 @@ public class fourth extends Activity {
         return super.onOptionsItemSelected(item);
     }
 }
-

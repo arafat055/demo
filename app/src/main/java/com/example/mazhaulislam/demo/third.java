@@ -5,14 +5,11 @@ package com.example.mazhaulislam.demo;
  */
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListView;
 
 
 public class third extends Activity {
@@ -32,7 +29,7 @@ public class third extends Activity {
                     }
                 }
         );
-        img4=(ImageView)findViewById(R.id.img4);
+        img4=(ImageView)findViewById(R.id.img6);
         img4.setOnClickListener(
                 new View.OnClickListener() {
                     @Override

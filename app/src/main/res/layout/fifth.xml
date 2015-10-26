@@ -42,7 +42,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/img3"
+        android:id="@+id/img7"
         android:src="@drawable/ager_pata"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
@@ -55,18 +55,18 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="আগের পাতা"
-        android:id="@+id/tv4"
+        android:id="@+id/textView4"
         android:textColor="#FFFFFF"
         android:textSize="22dp"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/img3"
-        android:layout_toEndOf="@+id/img3"
+        android:layout_toRightOf="@+id/img7"
+        android:layout_toEndOf="@+id/img7"
         android:layout_marginBottom="9dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/img6"
+        android:id="@+id/imageView4"
         android:src="@drawable/porer_pata"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -83,8 +83,8 @@
         android:textColor="#FFFFFF"
         android:textSize="22dp"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/img6"
-        android:layout_toStartOf="@+id/img6"
+        android:layout_toLeftOf="@+id/imageView4"
+        android:layout_toStartOf="@+id/imageView4"
         android:layout_marginBottom="9dp" />
 
     <HorizontalScrollView
@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView6"
-                android:src="@drawable/img1"
+                android:src="@drawable/img5"
                 android:layout_marginTop="10dp" />
 
             <ImageView
@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView10"
-                android:src="@drawable/img5"
+                android:src="@drawable/img1"
                 android:layout_alignTop="@+id/imageView9"
                 android:layout_toRightOf="@+id/imageView9"
                 android:layout_toEndOf="@+id/imageView9" />
@@ -172,8 +172,8 @@
         android:id="@+id/imageView13"
         android:src="@drawable/hook"
         android:layout_below="@+id/horizontalScrollView"
-        android:layout_alignRight="@+id/img6"
-        android:layout_alignEnd="@+id/img6" />
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -182,7 +182,7 @@
         android:layout_below="@+id/imageView13"
         android:layout_centerHorizontal="true"
         android:src="@drawable/map"
-        android:layout_above="@+id/tv4" />
+        android:layout_above="@+id/textView4" />
 
     <TextView
         android:layout_width="match_parent"
@@ -202,7 +202,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView15"
-        android:layout_above="@+id/img3"
+        android:layout_above="@+id/img7"
         android:layout_alignLeft="@+id/textView6"
         android:layout_alignStart="@+id/textView6"
         android:src="@drawable/map_boy" />
@@ -215,9 +215,8 @@
         android:background="#191562"
         android:textColor="#FFFFFF"
         android:textSize="22dp"
-        android:layout_above="@+id/tv4"
-        android:layout_toLeftOf="@+id/imageView13"
-        android:layout_toStartOf="@+id/imageView13"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp" />
 
     <ImageView
@@ -226,8 +225,8 @@
         android:id="@+id/imageView16"
         android:src="@drawable/opener"
         android:layout_alignTop="@+id/imageView14"
-        android:layout_alignLeft="@+id/img3"
-        android:layout_alignStart="@+id/img3" />
+        android:layout_alignLeft="@+id/img7"
+        android:layout_alignStart="@+id/img7" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -241,5 +240,122 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView13"
+        android:layout_centerHorizontal="true"
+        android:background="#69454F"
+        android:layout_above="@+id/imageView14"
+        android:id="@+id/rv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="স্কুল কলেজ"
+            android:id="@+id/button2"
+            android:background="#3C65E5"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="মাদ্রাসা"
+            android:id="@+id/button3"
+            android:background="#3C65E5"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="কারিগরি শিক্ষা"
+            android:id="@+id/button4"
+            android:background="#3C65E5"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button3"
+            android:layout_toEndOf="@+id/button3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView8"
+            android:textSize="18dp"
+            android:textColor="#AE979D"
+            android:text="যা যা দেখতে চান না, টিব দিয়া বাদ দেন"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView17"
+        android:src="@drawable/hook"
+        android:layout_below="@+id/imageView13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView18"
+        android:src="@drawable/pin"
+        android:layout_above="@+id/imageView19"
+        android:layout_toLeftOf="@+id/imageView19"
+        android:layout_toStartOf="@+id/imageView19" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView19"
+        android:src="@drawable/pin"
+        android:layout_alignTop="@+id/imageView15"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView20"
+        android:src="@drawable/pin"
+        android:layout_above="@+id/imageView21"
+        android:layout_toLeftOf="@+id/imageView21"
+        android:layout_toStartOf="@+id/imageView21" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView21"
+        android:src="@drawable/pin"
+        android:layout_below="@+id/imageView22"
+        android:layout_toRightOf="@+id/imageView19"
+        android:layout_toEndOf="@+id/imageView19" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView22"
+        android:src="@drawable/info"
+        android:layout_above="@+id/imageView18"
+        android:layout_toLeftOf="@+id/imageView21"
+        android:layout_toStartOf="@+id/imageView21" />
 
 </RelativeLayout>

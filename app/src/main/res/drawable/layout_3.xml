@@ -66,7 +66,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/img4"
+        android:id="@+id/img6"
         android:src="@drawable/porer_pata"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
