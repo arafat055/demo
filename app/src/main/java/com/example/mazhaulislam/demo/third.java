@@ -1,55 +1,55 @@
 package com.example.mazhaulislam.demo;
 
+/**
+ * Created by Mazhaul Islam on 26/10/2015.
+ */
+import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Typeface;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.ListView;
 
-import com.example.mazhaulislam.demo.R;
 
-public class secondActivity extends ActionBarActivity {
-    TextView tv2,tv4;
-    ImageView img,img1;
+public class third extends Activity {
+ ImageView img3,img4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_second);
-
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
-
-        tv2=(TextView)findViewById(R.id.tv2);
-        Typeface font = Typeface.createFromAsset(getAssets(), "SolaimanLipi_Bold_10-03-12.ttf");
-        tv2.setTypeface(font);
-        tv2.setText("কোন এলাকায় যাইবেন খালি কন");
-        tv4=(TextView)findViewById(R.id.tv4);
-        tv4.setText("আমি রেডি");
-        img= (ImageView)findViewById(R.id.img);
-        img1=(ImageView)findViewById(R.id.img1);
-        img.setOnClickListener(
+        setContentView(R.layout.third);
+        img3=(ImageView)findViewById(R.id.img3);
+        img3.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
-                        Intent i = new Intent(secondActivity.this,third.class);
+                        Intent i = new Intent(third.this,secondActivity.class);
                         startActivity(i);
                     }
                 }
         );
+        img4=(ImageView)findViewById(R.id.img4);
+        img4.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
 
+                        Intent k = new Intent(third.this,fourth.class);
+                        startActivity(k);
+                    }
+                }
+        );
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_second, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -68,6 +68,3 @@ public class secondActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-
-
-
