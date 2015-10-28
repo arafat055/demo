@@ -19,7 +19,7 @@ import android.widget.RelativeLayout;
 
 public class fifthActivity extends Activity {
     ImageView img7;
-    int flag=0 ,f=0;
+    int flag=0,f=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
