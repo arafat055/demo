@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.kolorob.activity.PlaceListActivity;
+
 
 public class third extends Activity {
  ImageView img3,img4;
@@ -24,7 +26,7 @@ public class third extends Activity {
                     @Override
                     public void onClick(View v) {
 
-                        Intent i = new Intent(third.this,secondActivity.class);
+                        Intent i = new Intent(third.this,PlaceListActivity.class);
                         startActivity(i);
                     }
                 }

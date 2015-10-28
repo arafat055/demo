@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llPList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvHelpText1PList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_text1_pList"
+                android:textSize="28dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"/>
+
+
+            <Button
+                android:id="@+id/btnOption1PList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option1_pList"
+                android:background="@drawable/rounded_corner_button"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:textSize="30dp"
+                android:padding="20dp"
+                android:layout_below="@+id/tvHelpText1PList"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/btnOption2PList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option2_pList"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:padding="20dp"
+                android:background="@drawable/rounded_corner_button"
+                android:layout_below="@+id/btnOption1PList"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="2dp"/>
+
+            <ImageView
+                android:id="@+id/ivHelperImagePList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selection_instruction"
+                android:layout_below="@+id/btnOption2PList"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"/>
+
+            <ImageView
+                android:id="@+id/ivIndicatorImagePList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/slection_direction"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/tvHelpText1PList"/>
+
+            <TextView
+                android:id="@+id/tvHelpText2PList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_text2_pList"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:layout_below="@+id/ivHelperImagePList"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/readyCartoon"
+                android:background="@drawable/selection_cartoon"
+                android:layout_below="@+id/ivHelperImagePList"
+                android:layout_toRightOf="@+id/tvHelpText2PList"
+                android:layout_marginLeft="25dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
