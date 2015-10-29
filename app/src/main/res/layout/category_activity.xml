@@ -62,11 +62,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="132dp"
-            android:gravity="start"
-            android:padding="7dp"
             android:layout_marginLeft="15dp"
             android:layout_marginStart="15dp"
+            android:layout_marginTop="132dp"
+            android:gravity="start"
+            android:padding="5dp"
             android:text="@string/txt_sub_cat_prompt"
             android:textColor="@color/white"
             android:textSize="16sp" />
@@ -86,8 +86,10 @@
                 android:id="@+id/llSubCatHolderCat"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:fillViewport="true"/>
+                android:layout_gravity="center"
+                android:fillViewport="true"
+                android:gravity="center"
+                android:orientation="horizontal" />
         </HorizontalScrollView>
 
         <HorizontalScrollView
@@ -163,6 +165,54 @@
             android:layout_marginTop="110dp"
             android:contentDescription="@string/txt_cd_hook"
             android:src="@drawable/hook" />
+
+        <FrameLayout
+            android:id="@+id/flDetailsHolderCat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="164dp"
+            android:background="@color/transparent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llFlowingDetailsCat"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:orientation="vertical"
+                tools:ignore="HardcodedText,Suspicious0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Sample List 1"
+                    android:textColor="@color/golden_dark" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Sample Item 1"
+                    android:textColor="@color/golden_dark" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivOpenerCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/txt_cd_cat_details_opener"
+                android:src="@drawable/opener" />
+
+        </LinearLayout>
 
     </FrameLayout>
 

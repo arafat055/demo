@@ -10,4 +10,7 @@
     <color name="black_cat_bg">#241f23</color>
     <color name="sky_blue">#3c65e5</color>
 
+    <color name="transparent">#00000000</color>
+    <color name="golden_dark">#d99e38</color>
+
 </resources>

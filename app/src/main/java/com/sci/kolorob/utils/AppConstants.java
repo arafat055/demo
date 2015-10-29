@@ -26,6 +26,7 @@ public class AppConstants {
     public static final int CAT_LAW = 106;
     public static final int CAT_MONEY = 107;
     public static final int CAT_BASE = CAT_EDU;
+    public static final int CAT_INVALID = -100;
     //endregion
     //region sub-category IDs
     public static final int SUB_CAT_EDU_SCHOOL_COLLEGE = 10101;

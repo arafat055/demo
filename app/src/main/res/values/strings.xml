@@ -14,4 +14,5 @@
     <string name="txt_cat_prompt">যেই বিষয়ে সাহায্য চান টিপ দেন</string>
     <string name="txt_sub_cat_prompt">আরো বিষয় আছে ... নাড়া দিয়ে দেখেন</string>
     <string name="txt_cd_hook">sub-category hook</string>
+    <string name="txt_cd_cat_details_opener">Details view opener</string>
 </resources>
