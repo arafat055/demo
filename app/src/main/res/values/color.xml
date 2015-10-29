@@ -12,5 +12,7 @@
 
     <color name="transparent">#00000000</color>
     <color name="golden_dark">#d99e38</color>
+    <color name="orange_reddish_mat">#F4512E</color>
+    <color name="blue_navy">#191663</color>
 
 </resources>

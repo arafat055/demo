@@ -157,15 +157,6 @@
 
         </HorizontalScrollView>
 
-        <ImageView
-            android:id="@+id/ivHookCat"
-            android:layout_width="74dp"
-            android:layout_height="70dp"
-            android:layout_gravity="end"
-            android:layout_marginTop="110dp"
-            android:contentDescription="@string/txt_cd_hook"
-            android:src="@drawable/hook" />
-
         <FrameLayout
             android:id="@+id/flDetailsHolderCat"
             android:layout_width="match_parent"
@@ -213,6 +204,46 @@
                 android:src="@drawable/opener" />
 
         </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="bottom"
+            android:background="@color/blue_navy">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ager_pata"
+                android:drawableStart="@drawable/ager_pata"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="আগের পাতা"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:drawableEnd="@drawable/porer_pata"
+                android:drawableRight="@drawable/porer_pata"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="পরের পাতা"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivHookCat"
+            android:layout_width="74dp"
+            android:layout_height="70dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="110dp"
+            android:contentDescription="@string/txt_cd_hook"
+            android:src="@drawable/hook" />
 
     </FrameLayout>
 

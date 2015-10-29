@@ -15,4 +15,6 @@
     <string name="txt_sub_cat_prompt">আরো বিষয় আছে ... নাড়া দিয়ে দেখেন</string>
     <string name="txt_cd_hook">sub-category hook</string>
     <string name="txt_cd_cat_details_opener">Details view opener</string>
+    <string name="txt_category_name">Category Name</string>
+    <string name="txt_btn_dir_prompt">Get Direction in My Region</string>
 </resources>

@@ -6,6 +6,12 @@ package com.sci.kolorob.utils;
  */
 public class AppConstants {
 
+    public static final String[] ALL_CAT_BN = {"পড়াশুনা", "আনন্দ ফুর্তি", "সরকারী সুবিধা", "চিকিৎসা", "চাকরি বাকরি",
+            "আইন কানুন", "টাকা পয়সা"};
+    public static final String[] ALL_CAT_DETAIL_BN = {"some details on পড়াশুনা", "some details on আনন্দ ফুর্তি",
+            "some details on সরকারী সুবিধা", "some details on চিকিৎসা", "some details on চাকরি বাকরি",
+            "some details on আইন কানুন", "some details on টাকা পয়সা"};
+
     public static final String[] SUB_CAT_EDU_BN = {"স্কুল-কলেজ", "মাদ্রাসা", "কারিগরি", "মেডিকেল", "অন্যান্য"};
     public static final String[] SUB_CAT_FUN_BN = {"খেলার মাঠ", "সাংস্কৃতিক", "ভ্রমণ", "ইলেক্ট্রনিক্স", "অন্যান্য"};
     public static final String[] SUB_CAT_GOVT_BN = {"উপযোগ", "সরকারী অফিস", "জরুরী", "অন্যান্য"};
@@ -49,6 +55,7 @@ public class AppConstants {
     //endregion
 
     //region Keys of the activity data-passing extras
+    public static final String KEY_CAT_OBJ = "category_object";
     public static final String KEY_PLACE = "place";
     public static final int PLACE_BAUNIABADH = 1;
     public static final int PLACE_PARIS_ROAD = 2;

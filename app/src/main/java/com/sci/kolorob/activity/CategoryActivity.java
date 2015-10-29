@@ -10,7 +10,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.sci.kolorob.R;
+import com.sci.kolorob.fragment.CatDetailsFragment;
 import com.sci.kolorob.helpers.OnSwipeTouchListener;
+import com.sci.kolorob.model.CatDetails;
 import com.sci.kolorob.utils.AppConstants;
 import com.sci.kolorob.utils.AppUtils;
 import com.sci.kolorob.utils.Lg;
@@ -156,10 +158,21 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
                     @Override
                     public void run() {
                         llSubCatHolder.removeAllViews();
+                        unselectAllCategories();
                     }
                 });
             }
         }, SLIDE_INTERVAL_MS * TOP_SLIDE_DELTA);
+    }
+
+    private void unselectAllCategories() {
+        findViewById(R.id.btnEduCat).setSelected(false);
+        findViewById(R.id.btnFunCat).setSelected(false);
+        findViewById(R.id.btnGovtCat).setSelected(false);
+        findViewById(R.id.btnHealthCat).setSelected(false);
+        findViewById(R.id.btnJobCat).setSelected(false);
+        findViewById(R.id.btnLawCat).setSelected(false);
+        findViewById(R.id.btnMoneyCat).setSelected(false);
     }
 
     private void populateSubCategory(int categoryId) {
@@ -176,6 +189,20 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
             btn.setLayoutParams(lp);
             llSubCatHolder.addView(btn);
         }
+        // TO_DO Attach a fragment with the respective category data
+        CatDetailsFragment catDetailsFrag = CatDetailsFragment.newInstance();
+        Bundle catDetailsData = new Bundle();
+        catDetailsData.putSerializable(AppConstants.KEY_CAT_OBJ, getCategoryDetailsFull(categoryId));
+        catDetailsFrag.setArguments(catDetailsData);
+        getSupportFragmentManager().beginTransaction().replace(R.id.flDetailsHolderCat, catDetailsFrag).commit();
+    }
+
+    private CatDetails getCategoryDetailsFull(int categoryId) {
+        int catPos = categoryId - AppConstants.CAT_BASE;
+        String catName = AppConstants.ALL_CAT_BN[(catPos)];
+        String catDetails = AppConstants.ALL_CAT_DETAIL_BN[catPos];
+
+        return new CatDetails(catName, catDetails);
     }
 
     /**
@@ -229,34 +256,50 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
 
         switch (view.getId()) {
             case R.id.ivHookCat:
+                unselectAllCategories();
+                findViewById(R.id.btnEduCat).setSelected(true);
                 toggleSubCategoryView();
                 break;
 
             case R.id.btnEduCat:
+                unselectAllCategories();
+                findViewById(R.id.btnEduCat).setSelected(true);
                 toggleSubCategoryView(0, AppConstants.CAT_EDU);
                 break;
 
             case R.id.btnFunCat:
+                unselectAllCategories();
+                findViewById(R.id.btnFunCat).setSelected(true);
                 toggleSubCategoryView(0, AppConstants.CAT_FUN);
                 break;
 
             case R.id.btnGovtCat:
+                unselectAllCategories();
+                findViewById(R.id.btnGovtCat).setSelected(true);
                 toggleSubCategoryView(0, AppConstants.CAT_GOVT);
                 break;
 
             case R.id.btnHealthCat:
+                unselectAllCategories();
+                findViewById(R.id.btnHealthCat).setSelected(true);
                 toggleSubCategoryView(0, AppConstants.CAT_HEALTH);
                 break;
 
             case R.id.btnJobCat:
+                unselectAllCategories();
+                findViewById(R.id.btnJobCat).setSelected(true);
                 toggleSubCategoryView(0, AppConstants.CAT_JOB);
                 break;
 
             case R.id.btnLawCat:
+                unselectAllCategories();
+                findViewById(R.id.btnLawCat).setSelected(true);
                 toggleSubCategoryView(0, AppConstants.CAT_LAW);
                 break;
 
             case R.id.btnMoneyCat:
+                unselectAllCategories();
+                findViewById(R.id.btnMoneyCat).setSelected(true);
                 toggleSubCategoryView(0, AppConstants.CAT_MONEY);
                 break;
 

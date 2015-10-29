@@ -1,10 +1,12 @@
 package com.sci.kolorob.model;
 
+import java.io.Serializable;
+
 /**
  * Created by touhid on 10/30/15.
  * @author touhid
  */
-public class CatDetails {
+public class CatDetails implements Serializable{
 
     private String catName, otherDetails;
 
