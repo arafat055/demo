@@ -82,6 +82,12 @@
             android:layout_marginTop="60dp"
             android:background="@color/purple_kolorob">
 
+            <LinearLayout
+                android:id="@+id/llSubCatHolderCat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:fillViewport="true"/>
         </HorizontalScrollView>
 
         <HorizontalScrollView
