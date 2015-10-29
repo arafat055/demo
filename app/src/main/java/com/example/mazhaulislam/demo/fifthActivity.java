@@ -3,23 +3,24 @@ package com.example.mazhaulislam.demo;
 /**
  * Created by Mazhaul Islam on 26/10/2015.
  */
+
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
+
+import com.sci.kolorob.R;
 
 
 public class fifthActivity extends Activity {
     ImageView img7;
-    int flag=0,f=0;
+    int flag = 0, f = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,13 +43,13 @@ public class fifthActivity extends Activity {
 
         final RelativeLayout rv = (RelativeLayout) findViewById(R.id.rv);
         rv.setVisibility(View.INVISIBLE);
-        img7=(ImageView)findViewById(R.id.img7);
+        img7 = (ImageView) findViewById(R.id.img7);
         img7.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
-                        Intent i = new Intent(fifthActivity.this,fourth.class);
+                        Intent i = new Intent(fifthActivity.this, fourth.class);
                         startActivity(i);
                     }
                 }
@@ -56,7 +57,7 @@ public class fifthActivity extends Activity {
         study.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(flag==0) {
+                if (flag == 0) {
                     pin1.setVisibility(View.VISIBLE);
                     pin2.setVisibility(View.VISIBLE);
                     pin3.setVisibility(View.VISIBLE);
@@ -64,9 +65,8 @@ public class fifthActivity extends Activity {
                     hook.setVisibility(View.VISIBLE);
                     rv.setVisibility(View.VISIBLE);
                     b.setText("এলাকার পড়াশুনা");
-                    flag=1;
-                }
-                else{
+                    flag = 1;
+                } else {
                     pin1.setVisibility(View.INVISIBLE);
                     pin2.setVisibility(View.INVISIBLE);
                     pin3.setVisibility(View.INVISIBLE);
@@ -74,14 +74,14 @@ public class fifthActivity extends Activity {
                     hook.setVisibility(View.INVISIBLE);
                     rv.setVisibility(View.INVISIBLE);
                     b.setText("বাউনিয়া বাঁধ");
-                    flag=0;
+                    flag = 0;
                 }
             }
         });
         hook1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(flag==0) {
+                if (flag == 0) {
                     pin1.setVisibility(View.VISIBLE);
                     pin2.setVisibility(View.VISIBLE);
                     pin3.setVisibility(View.VISIBLE);
@@ -89,9 +89,8 @@ public class fifthActivity extends Activity {
                     hook.setVisibility(View.VISIBLE);
                     rv.setVisibility(View.VISIBLE);
                     b.setText("এলাকার পড়াশুনা");
-                    flag=1;
-                }
-                else{
+                    flag = 1;
+                } else {
                     pin1.setVisibility(View.INVISIBLE);
                     pin2.setVisibility(View.INVISIBLE);
                     pin3.setVisibility(View.INVISIBLE);
@@ -99,20 +98,19 @@ public class fifthActivity extends Activity {
                     hook.setVisibility(View.INVISIBLE);
                     rv.setVisibility(View.INVISIBLE);
                     b.setText("বাউনিয়া বাঁধ");
-                    flag=0;
+                    flag = 0;
                 }
             }
         });
         pin1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(f==0) {
+                if (f == 0) {
                     info.setVisibility(View.VISIBLE);
-                    f=1;
-                }
-                else{
+                    f = 1;
+                } else {
                     info.setVisibility(View.INVISIBLE);
-                    f=0;
+                    f = 0;
                 }
             }
         });

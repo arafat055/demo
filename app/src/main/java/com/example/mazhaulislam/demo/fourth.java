@@ -1,31 +1,27 @@
 package com.example.mazhaulislam.demo;
-
-/**
- * Created by Mazhaul Islam on 26/10/2015.
- */
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
+
+import com.sci.kolorob.R;
 
 
 public class fourth extends Activity {
 
-    int flag=0;
+    int flag = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fourth);
-        ImageView img5=(ImageView)findViewById(R.id.img5);
-        ImageView img6=(ImageView)findViewById(R.id.img6);
+        ImageView img5 = (ImageView) findViewById(R.id.img5);
+        ImageView img6 = (ImageView) findViewById(R.id.img6);
         ImageView study = (ImageView) findViewById(R.id.imageView6);
         final ImageView hook = (ImageView) findViewById(R.id.imageView17);
         final Button b = (Button) findViewById(R.id.button);
@@ -67,7 +63,7 @@ public class fourth extends Activity {
         study.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(flag==0) {
+                if (flag == 0) {
                     pin1.setVisibility(View.VISIBLE);
                     pin2.setVisibility(View.VISIBLE);
                     pin3.setVisibility(View.VISIBLE);
@@ -75,9 +71,8 @@ public class fourth extends Activity {
                     hook.setVisibility(View.VISIBLE);
                     rv.setVisibility(View.VISIBLE);
                     b.setText("এলাকার পড়াশুনা");
-                    flag=1;
-                }
-                else{
+                    flag = 1;
+                } else {
                     pin1.setVisibility(View.INVISIBLE);
                     pin2.setVisibility(View.INVISIBLE);
                     pin3.setVisibility(View.INVISIBLE);
@@ -85,14 +80,14 @@ public class fourth extends Activity {
                     hook.setVisibility(View.INVISIBLE);
                     rv.setVisibility(View.INVISIBLE);
                     b.setText("বাউনিয়া বাঁধ");
-                    flag=0;
+                    flag = 0;
                 }
             }
         });
         hook1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(flag==0) {
+                if (flag == 0) {
                     pin1.setVisibility(View.VISIBLE);
                     pin2.setVisibility(View.VISIBLE);
                     pin3.setVisibility(View.VISIBLE);
@@ -100,9 +95,8 @@ public class fourth extends Activity {
                     hook.setVisibility(View.VISIBLE);
                     rv.setVisibility(View.VISIBLE);
                     b.setText("এলাকার পড়াশুনা");
-                    flag=1;
-                }
-                else{
+                    flag = 1;
+                } else {
                     pin1.setVisibility(View.INVISIBLE);
                     pin2.setVisibility(View.INVISIBLE);
                     pin3.setVisibility(View.INVISIBLE);
@@ -110,7 +104,7 @@ public class fourth extends Activity {
                     hook.setVisibility(View.INVISIBLE);
                     rv.setVisibility(View.INVISIBLE);
                     b.setText("বাউনিয়া বাঁধ");
-                    flag=0;
+                    flag = 0;
                 }
             }
         });

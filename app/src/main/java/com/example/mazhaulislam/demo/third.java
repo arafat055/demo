@@ -3,6 +3,7 @@ package com.example.mazhaulislam.demo;
 /**
  * Created by Mazhaul Islam on 26/10/2015.
  */
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,33 +12,35 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.kolorob.activity.PlaceListActivity;
+import com.sci.kolorob.R;
+import com.sci.kolorob.activity.PlaceListActivity;
 
 
 public class third extends Activity {
- ImageView img3,img4;
+    ImageView img3, img4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.third);
-        img3=(ImageView)findViewById(R.id.img3);
+        img3 = (ImageView) findViewById(R.id.img3);
         img3.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
-                        Intent i = new Intent(third.this,PlaceListActivity.class);
+                        Intent i = new Intent(third.this, PlaceListActivity.class);
                         startActivity(i);
                     }
                 }
         );
-        img4=(ImageView)findViewById(R.id.img6);
+        img4 = (ImageView) findViewById(R.id.img6);
         img4.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
-                        Intent k = new Intent(third.this,fourth.class);
+                        Intent k = new Intent(third.this, fourth.class);
                         startActivity(k);
                     }
                 }

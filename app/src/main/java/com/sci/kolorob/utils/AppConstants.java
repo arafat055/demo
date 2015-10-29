@@ -46,4 +46,10 @@ public class AppConstants {
     public static final int SUB_CAT_GOVT_OTHERS = 10304;
     // TODO Declare other sub-category IDs
     //endregion
+
+    //region Keys of the activity data-passing extras
+    public static final String KEY_PLACE = "place";
+    public static final int PLACE_BAUNIABADH = 1;
+    public static final int PLACE_PARIS_ROAD = 2;
+    //endregion
 }

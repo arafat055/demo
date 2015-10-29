@@ -4,12 +4,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.sci.kolorob.R;
-import com.sci.kolorob.helpers.AndroidUnicodedFontSupport;
 import com.sci.kolorob.utils.AppConstants;
 import com.sci.kolorob.utils.AppUtils;
 
@@ -53,12 +53,12 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
     }
 
     private void toggleSubCategoryView() {
-        LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) ivHookCat.getLayoutParams();
+        FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) ivHookCat.getLayoutParams();
         // -1 will decrease the top margin of the hook (hide sub-category), 1 will increase it
         int hookMovDir = lp.topMargin > 60 ? -1 : 1;
         runSlideAction(hookMovDir);
-        if(hookMovDir>0)
-        populateSubCategory(AppConstants.CAT_EDU);
+        if (hookMovDir > 0)
+            populateSubCategory(AppConstants.CAT_EDU);
         else
             clearSubCategoryList();
     }
@@ -71,7 +71,7 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
     private void populateSubCategory(int categoryId) {
         LinearLayout llSubCatHolder = (LinearLayout) findViewById(R.id.llSubCatHolderCat);
         String[] subCats = AppConstants.SUB_CATEGORIES[categoryId - AppConstants.CAT_BASE];
-        for (String s:subCats) {
+        for (String s : subCats) {
             Button btn = new Button(CategoryActivity.this);
             btn.setText(AppUtils.getUnicodedFormat(getAssets(), s));
             btn.setBackgroundColor(getResources().getColor(R.color.sky_blue));
@@ -83,22 +83,21 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
         movHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                LinearLayout.LayoutParams lpIvHook = (LinearLayout.LayoutParams) ivHookCat.getLayoutParams();
+                FrameLayout.LayoutParams lpIvHook = (FrameLayout.LayoutParams) ivHookCat.getLayoutParams();
                 int hookTopMargin = lpIvHook.topMargin;
-                if (hookTopMargin > 85 || hookTopMargin < 61)
-                    return;
                 lpIvHook.setMargins(0, hookTopMargin + hookMovDir, 0, 0);
                 ivHookCat.setLayoutParams(lpIvHook);
 
-                LinearLayout.LayoutParams lpSubCat = (LinearLayout.LayoutParams) hsvCategory.getLayoutParams();
+                FrameLayout.LayoutParams lpSubCat = (FrameLayout.LayoutParams) hsvCategory.getLayoutParams();
                 lpSubCat.setMargins(0, lpSubCat.topMargin + hookMovDir, 0, 0);
                 hsvCategory.setLayoutParams(lpSubCat);
 
-                LinearLayout.LayoutParams lpCat = (LinearLayout.LayoutParams) hsvCategory.getLayoutParams();
+                FrameLayout.LayoutParams lpCat = (FrameLayout.LayoutParams) hsvCategory.getLayoutParams();
                 lpCat.setMargins(0, lpCat.topMargin + hookMovDir * -1, 0, 0);
                 hsvCategory.setLayoutParams(lpCat);
 
-                runSlideAction(hookMovDir);
+                if (hookTopMargin > 60 && hookTopMargin < 86)
+                    runSlideAction(hookMovDir);
             }
         }, 100);
     }
