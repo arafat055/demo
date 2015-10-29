@@ -106,14 +106,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView6"
-                android:src="@drawable/img1"
+                android:src="@drawable/cat_law"
                 android:layout_marginTop="10dp" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView7"
-                android:src="@drawable/img2"
+                android:src="@drawable/cat_fun"
                 android:layout_alignTop="@+id/imageView6"
                 android:layout_toRightOf="@+id/imageView6"
                 android:layout_toEndOf="@+id/imageView6" />
@@ -122,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView8"
-                android:src="@drawable/img3"
+                android:src="@drawable/cat_job"
                 android:layout_alignTop="@+id/imageView7"
                 android:layout_toRightOf="@+id/imageView7"
                 android:layout_toEndOf="@+id/imageView7" />
@@ -131,7 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView9"
-                android:src="@drawable/img4"
+                android:src="@drawable/cat_health"
                 android:layout_alignTop="@+id/imageView8"
                 android:layout_toRightOf="@+id/imageView8"
                 android:layout_toEndOf="@+id/imageView8" />
@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView10"
-                android:src="@drawable/img5"
+                android:src="@drawable/cat_edu"
                 android:layout_alignTop="@+id/imageView9"
                 android:layout_toRightOf="@+id/imageView9"
                 android:layout_toEndOf="@+id/imageView9" />
@@ -149,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView11"
-                android:src="@drawable/img6"
+                android:src="@drawable/cat_govt"
                 android:layout_alignTop="@+id/imageView10"
                 android:layout_toRightOf="@+id/imageView10"
                 android:layout_toEndOf="@+id/imageView10" />
@@ -158,7 +158,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView12"
-                android:src="@drawable/img7"
+                android:src="@drawable/cat_money"
                 android:layout_alignTop="@+id/imageView11"
                 android:layout_toRightOf="@+id/imageView11"
                 android:layout_toEndOf="@+id/imageView11" />

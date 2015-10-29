@@ -1,4 +1,4 @@
-package com.kolorob.activity;
+package com.sci.kolorob.activity;
 
 import android.app.Activity;
 import android.os.Bundle;

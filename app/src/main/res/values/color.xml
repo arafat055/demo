@@ -4,4 +4,9 @@
     <color name="grey">#151515</color>
     <color name="light_grey">#939393</color>
     <color name="black">#000000</color>
+
+    <color name="violet_kolorob">#90278E</color>
+    <color name="purple_kolorob">#69454f</color>
+    <color name="black_cat_bg">#241f23</color>
+
 </resources>

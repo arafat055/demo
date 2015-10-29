@@ -7,4 +7,11 @@
     <string name="option2_pList">প্যারিস রোড</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_second">secondActivity</string>
+    <string name="txt_places">Places</string>
+    <string name="txt_cat_title">Category in the Place</string>
+    <string name="txt_et_hint_name_prompt_bn">কইবেন? তাইলে টিবি দেন</string>
+    <string name="txt_tv_name_prompt">আপনার নামটা কি?</string>
+    <string name="txt_cat_prompt">যেই বিষয়ে সাহায্য চান টিপ দেন</string>
+    <string name="txt_sub_cat_prompt">আরো বিষয় আছে ... নাড়া দিয়ে দেখেন</string>
+    <string name="txt_cd_hook">sub-category hook</string>
 </resources>
