@@ -58,6 +58,6 @@ public class AppConstants {
     public static final String KEY_CAT_OBJ = "category_object";
     public static final String KEY_PLACE = "place";
     public static final int PLACE_BAUNIABADH = 1;
-    public static final int PLACE_PARIS_ROAD = 2;
+    public static final int PLACE_PARIS_ROAD = 2; 
     //endregion
 }
