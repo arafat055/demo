@@ -13,12 +13,12 @@ public class AppConstants {
             "some details on আইন কানুন", "some details on টাকা পয়সা"};
 
     public static final String[] SUB_CAT_EDU_BN = {"স্কুল-কলেজ", "মাদ্রাসা", "কারিগরি", "মেডিকেল", "অন্যান্য"};
-    public static final String[] SUB_CAT_FUN_BN = {"খেলার মাঠ", "সাংস্কৃতিক", "ভ্রমণ", "ইলেক্ট্রনিক্স", "অন্যান্য"};
-    public static final String[] SUB_CAT_GOVT_BN = {"উপযোগ", "সরকারী অফিস", "জরুরী", "অন্যান্য"};
+    public static final String[] SUB_CAT_FUN_BN = {"খেলার মাঠ", "সাংস্কৃতিক স্কুল", "ভ্রমণ", "দোকান"};
+    public static final String[] SUB_CAT_GOVT_BN = {"বিল জমা দেওয়া", "সরকারী অফিস", "জরুরী", "অন্যান্য"};
     public static final String[] SUB_CAT_HEALTH_BN = {"ক্লিনিক", "হসপিটাল", "ফার্মেসি", "অন্যান্য"};
-    public static final String[] SUB_CAT_JOB_BN = {"sub-category-1", "sub-category-2", "sub-category-3"};
-    public static final String[] SUB_CAT_LAW_BN = {"আইনজীবী", "আইন-কেন্দ্র", "সালিশ কেন্দ্র"};
-    public static final String[] SUB_CAT_MONEY_BN = {"sub-category-1", "sub-category-2", "sub-category-3"};
+    public static final String[] SUB_CAT_JOB_BN = {"দিনমজুর", "স্বনির্ভর/হস্তশিল্প", "ছোট চাকরি/কারখানা/গার্মেন্টস","বিদেশে চাকরি"};
+    public static final String[] SUB_CAT_LAW_BN = {"আইনজীবী", "আইনী সহায়তা কেন্দ্র", "সালিশ কেন্দ্র"};
+    public static final String[] SUB_CAT_MONEY_BN = {"সাধারণ লেনদেন", "মোবাইল ব্যাংকিং", "বিল পরিশোধ কেন্দ্র","বীমা","ক্ষুদ্র ঋণ"};
 
     public static final String[][] SUB_CATEGORIES = {SUB_CAT_EDU_BN, SUB_CAT_FUN_BN, SUB_CAT_GOVT_BN,
             SUB_CAT_HEALTH_BN, SUB_CAT_JOB_BN, SUB_CAT_LAW_BN, SUB_CAT_MONEY_BN};
