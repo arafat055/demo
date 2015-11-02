@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.sci.kolorob.R;
 import com.sci.kolorob.fragment.CatDetailsFragment;
@@ -30,8 +31,8 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
     private HorizontalScrollView hsvCategory, hsvSubCategory;
     private ImageView ivHookCat;
     private Handler movHandler;
-
-    private static final int HOOK_TOP_MARGIN = 110;
+    private TextView subcat_below_tv,subcat_tv;
+    private static final int HOOK_TOP_MARGIN = 160;
     private static final int TOP_SLIDE_DELTA = 26;
     private static final int SLIDE_INTERVAL_MS = 15;
 
@@ -47,6 +48,9 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
         hsvSubCategory = (HorizontalScrollView) findViewById(R.id.hsvSubCat);
         ivHookCat = (ImageView) findViewById(R.id.ivHookCat);
         ivHookCat.setOnClickListener(this);
+        subcat_below_tv= (TextView) findViewById(R.id.belowSubCat);
+        subcat_tv = (TextView) findViewById(R.id.textView);
+        subcat_tv.setVisibility(View.INVISIBLE);
 
         setCategoryClickers();
 
@@ -179,15 +183,16 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
         LinearLayout llSubCatHolder = (LinearLayout) findViewById(R.id.llSubCatHolderCat);
         llSubCatHolder.removeAllViews();
         String[] subCats = AppConstants.SUB_CATEGORIES[categoryId - AppConstants.CAT_BASE];
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         for (String s : subCats) {
             Lg.e(TAG, "Setting sub-category: " + s);
             Button btn = new Button(CategoryActivity.this);
             btn.setText(AppUtils.getUnicodedFormat(getAssets(), s));
             btn.setBackgroundColor(getResources().getColor(R.color.sky_blue));
-            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             lp.setMargins(5, 3, 3, 3);
             btn.setLayoutParams(lp);
             llSubCatHolder.addView(btn);
+
         }
         // TO_DO Attach a fragment with the respective category data
         CatDetailsFragment catDetailsFrag = CatDetailsFragment.newInstance();
@@ -212,6 +217,7 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
      */
     private void runSlideAction(final int hookMovDir) {
         Lg.e(TAG, "runSlideAction : Hook move-direction = " + hookMovDir);
+
         movHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -235,7 +241,16 @@ public class CategoryActivity extends BaseActivity implements View.OnClickListen
                         FrameLayout.LayoutParams lpCat = (FrameLayout.LayoutParams) hsvCategory.getLayoutParams();
                         lpCat.setMargins(0, lpCat.topMargin + hookMovDir * -1, 0, 0);
                         hsvCategory.setLayoutParams(lpCat);
-
+                        if( newHookTopMargin==160)
+                        {
+                            subcat_below_tv.setVisibility(View.VISIBLE);
+                            subcat_tv.setVisibility(View.INVISIBLE);
+                        }
+                        else
+                        {
+                            subcat_below_tv.setVisibility(View.INVISIBLE);
+                            subcat_tv.setVisibility(View.VISIBLE);
+                        }
                         Lg.d(TAG, "Hook top margin inside runSlideAction: " + hookTopMargin);
                         if ((hookMovDir > 0 && hookTopMargin < (HOOK_TOP_MARGIN + TOP_SLIDE_DELTA))
                                 || (hookMovDir < 0 && hookTopMargin > HOOK_TOP_MARGIN))

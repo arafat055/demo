@@ -19,6 +19,7 @@ public class AppConstants {
     public static final String[] SUB_CAT_JOB_BN = {"দিনমজুর", "স্বনির্ভর/হস্তশিল্প", "ছোট চাকরি/কারখানা/গার্মেন্টস","বিদেশে চাকরি"};
     public static final String[] SUB_CAT_LAW_BN = {"আইনজীবী", "আইনী সহায়তা কেন্দ্র", "সালিশ কেন্দ্র"};
     public static final String[] SUB_CAT_MONEY_BN = {"সাধারণ লেনদেন", "মোবাইল ব্যাংকিং", "বিল পরিশোধ কেন্দ্র","বীমা","ক্ষুদ্র ঋণ"};
+    public static final String BELOW_SUB_CAT_TEXT = "Put real text here";
 
     public static final String[][] SUB_CATEGORIES = {SUB_CAT_EDU_BN, SUB_CAT_FUN_BN, SUB_CAT_GOVT_BN,
             SUB_CAT_HEALTH_BN, SUB_CAT_JOB_BN, SUB_CAT_LAW_BN, SUB_CAT_MONEY_BN};

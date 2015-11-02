@@ -47,8 +47,74 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="164dp"
-            android:background="@drawable/backdrop" />
+            android:layout_height="210dp"
+            android:background="@drawable/backdrop" >
+
+            <HorizontalScrollView
+                android:id="@+id/hsvSubCat"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="55dp"
+                android:background="@color/purple_kolorob"
+                android:layout_gravity="right"
+                android:focusable="false">
+
+                <LinearLayout
+                    android:id="@+id/llSubCatHolderCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fillViewport="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/ivHookCat"
+                android:layout_width="74dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="123dp"
+                android:contentDescription="@string/txt_cd_hook"
+                android:src="@drawable/hook" />
+
+            <TextView
+                android:id="@+id/belowSubCat"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="53dp"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="@string/txt_sub_cat_prompt"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="43dp"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="@string/txt_sub_cat_prompt"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:focusable="true"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -57,40 +123,7 @@
             android:padding="7dp"
             android:text="@string/txt_cat_prompt"
             android:textColor="@color/white"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="132dp"
-            android:gravity="start"
-            android:padding="5dp"
-            android:text="@string/txt_sub_cat_prompt"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
-
-        <HorizontalScrollView
-            android:id="@+id/hsvSubCat"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginLeft="17dp"
-            android:layout_marginRight="17dp"
-            android:layout_marginStart="17dp"
-            android:layout_marginTop="60dp"
-            android:background="@color/purple_kolorob">
-
-            <LinearLayout
-                android:id="@+id/llSubCatHolderCat"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:fillViewport="true"
-                android:gravity="center"
-                android:orientation="horizontal" />
-        </HorizontalScrollView>
+            android:textSize="15sp" />
 
         <HorizontalScrollView
             android:id="@+id/hsvCat"
@@ -156,13 +189,6 @@
             </LinearLayout>
 
         </HorizontalScrollView>
-
-        <FrameLayout
-            android:id="@+id/flDetailsHolderCat"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="164dp"
-            android:background="@color/transparent" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -236,14 +262,15 @@
                 android:textSize="20sp" />
         </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/ivHookCat"
-            android:layout_width="74dp"
-            android:layout_height="70dp"
-            android:layout_gravity="end"
-            android:layout_marginTop="110dp"
-            android:contentDescription="@string/txt_cd_hook"
-            android:src="@drawable/hook" />
+        <FrameLayout
+            android:id="@+id/flDetailsHolderCat"
+            android:layout_width="match_parent"
+            android:layout_height="488dp"
+            android:layout_marginTop="164dp"
+            android:background="@color/transparent"
+            android:layout_gravity="center">
+
+        </FrameLayout>
 
     </FrameLayout>
 
